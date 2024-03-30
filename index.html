@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eatwell</title>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <hr>
+    <div class="mainlogo">
+        <img src="Images/EATwell logo main.png" alt="mainlogo">
+    </div>
+    <div class="topnav">
+        <nav>
+            <a><button>Home</button></a>
+            <a><button>Gallery</button></a>
+            <a href="Shop.html"><button>Shop</button></a>
+            <a><button>User Profile</button></a>
+            <a><button>FeedBack</button></a>
+            <a><button>Sitemap</button></a>
+            <a><button>Team</button></a>
+            <a href="Student1 Content page.html"><button>Content Page</button></a>
+            <a href="Student1 Page editor.html"><button>Page Editor</button></a>
+        </nav>
+    </div><br><br>
+
+    <div class="Shoptitle">
+        <h1>Welcome to EATWELL shop!</h1>
+    </div><hr>
+
+    <div class="Shopcontainer">
+        
+        
+        <div class="Foodlist" id="foodList">
+            <div class="food">
+                <img src="Images/breakfast rice plate.jpg" alt="Breakfast Rice Box">
+                <h2>Breakfast Rice Box</h2>
+                <p>Price : Rs.300</p>
+                <input type="number" id="quantity1" min="1" value="1">
+                <button onclick="addToOrder(1, 'Breakfast Rice Box', 300)">Add to Bill</button>
+                <button onclick="resetQuantity(1)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/English breakfast.jpeg" alt="English Breakfast">
+                <h2>English Breakfast</h2>
+                <p>Price : Rs.450</p>
+                <input type="number" id="quantity2" min="1" value="1">
+                <button onclick="addToOrder(2, '-English Breakfast', 450)">Add to Bill</button>
+                <button onclick="resetQuantity(2)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/lunch rice.jpg" alt="Lunch Fried Rice">
+                <h2>Lunch Fried Rice</h2>
+                <p>Price : Rs.300</p>
+                <input type="number" id="quantity3" min="1" value="1">
+                <button onclick="addToOrder(3, 'Lunch Fried Rice', 300)">Add to Bill</button>
+                <button onclick="resetQuantity(3)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/lunch veg.jpg" alt="Lunch Vegetable Fried Rice">
+                <h2>Lunch Vegetable Fried Rice</h2>
+                <p>Price : Rs.250</p>
+                <input type="number" id="quantity4" min="1" value="1">
+                <button onclick="addToOrder(4, 'Lunch Vegetable Fried Rice', 250)">Add to Bill</button>
+                <button onclick="resetQuantity(4)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/rice and curry.jpeg" alt="Lunch Rice and Curry">
+                <h2>Lunch Rice and Curry</h2>
+                <p>Price : Rs.350</p>
+                <input type="number" id="quantity5" min="1" value="1">
+                <button onclick="addToOrder(5, 'Lunch Rice and Curry', 350)">Add to Bill</button>
+                <button onclick="resetQuantity(5)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/dinner special rice.jpg" alt="Dinner special rice box">
+                <h2>Dinner special rice box</h2>
+                <p>Price : Rs.350</p>
+                <input type="number" id="quantity6" min="1" value="1">
+                <button onclick="addToOrder(6, 'Dinner special rice box', 350)">Add to Bill</button>
+                <button onclick="resetQuantity(6)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/chicken kottu.jpg" alt="Kottu (Chicken)">
+                <h2>Kottu (Chicken)</h2>
+                <p>Price : Rs.400</p>
+                <input type="number" id="quantity7" min="1" value="1">
+                <button onclick="addToOrder(7, 'Kottu-Chicken', 400)">Add to Bill</button>
+                <button onclick="resetQuantity(7)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/cheese kottu.jpg" alt="Cheese kottu">
+                <h2>Cheese kottu</h2>
+                <p>Price : Rs.450</p>
+                <input type="number" id="quantity8" min="1" value="1">
+                <button onclick="addToOrder(8, 'Cheese kottu', 450)">Add to Bill</button>
+                <button onclick="resetQuantity(8)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/biriyani.jpg" alt="Biriyani">
+                <h2>Biriyani</h2>
+                <p>Price : Rs.400</p>
+                <input type="number" id="quantity9" min="1" value="1">
+                <button onclick="addToOrder(9, 'Biriyani', 400)">Add to Bill</button>
+                <button onclick="resetQuantity(9)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/chicken noodles.jpg" alt="Chicken Noodles">
+                <h2>Chicken Noodles</h2>
+                <p>Price : Rs.350</p>
+                <input type="number" id="quantity10" min="1" value="1">
+                <button onclick="addToOrder(10, 'Chicken Noodles', 350)">Add to Bill</button>
+                <button onclick="resetQuantity(10)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/Cheese-Pasta.jpg" alt="Cheese Pasta">
+                <h2>Cheese Pasta</h2>
+                <p>Price : Rs.400</p>
+                <input type="number" id="quantity11" min="1" value="1">
+                <button onclick="addToOrder(11, 'Cheese Pasta', 400)">Add to Bill</button>
+                <button onclick="resetQuantity(11)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/mix rice.jpg" alt="Mix fried rice(Large) (Chicken & seafood & sausages)">
+                <h2>Mix fried rice(Large) (Chicken & seafood & sausages)</h2>
+                <p>Price : Rs.800</p>
+                <input type="number" id="quantity12" min="1" value="1">
+                <button onclick="addToOrder(12, 'Mix fried rice-Large', 800)">Add to Bill</button>
+                <button onclick="resetQuantity(12)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/devilled chicken.jpg" alt="Devilled Chicken">
+                <h2>Devilled Chicken</h2>
+                <p>Price : Rs.500</p>
+                <input type="number" id="quantity13" min="1" value="1">
+                <button onclick="addToOrder(13, 'Devilled Chicken', 500)">Add to Bill</button>
+                <button onclick="resetQuantity(13)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/soft drinks.jpg" alt="Soft Drink Bottles pack (1 Coke, 1 Fanta,1 Sprite)">
+                <h2>Soft Drinks combo pack (1 Coke, 1 Fanta,1 Sprite)</h2>
+                <p>Price : Rs.300</p>
+                <input type="number" id="quantity14" min="1" value="1">
+                <button onclick="addToOrder(14, 'Soft Drink Bottles pack-coke,fanta,sprite', 300)">Add to Bill</button>
+                <button onclick="resetQuantity(14)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/choclate milk.jpg" alt="Milkshakes (Chocolate)">
+                <h2>Milkshakes (Chocolate)</h2>
+                <p>Price : Rs.350</p>
+                <input type="number" id="quantity15" min="1" value="1">
+                <button onclick="addToOrder(15, 'Milkshakes -Chocolate', 350)">Add to Bill</button>
+                <button onclick="resetQuantity(15)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/vanilla milk.jpg" alt="Milkshakes (Vanilla)">
+                <h2>Milkshakes (Vanilla)x</h2>
+                <p>Price : Rs.250</p>
+                <input type="number" id="quantity16" min="1" value="1">
+                <button onclick="addToOrder(16, 'Milkshakes- Vanilla', 250)">Add to Bill</button>
+                <button onclick="resetQuantity(16)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/faluda.jpg" alt="Faluda">
+                <h2>Faluda</h2>
+                <p>Price : Rs.300</p>
+                <input type="number" id="quantity17" min="1" value="1">
+                <button onclick="addToOrder(17, 'Faluda', 300)">Add to Bill</button>
+                <button onclick="resetQuantity(17)">Reset</button>
+            </div>
+            <div class="food">
+                <img src="Images/lemon.jpeg" alt="Lemon juice">
+                <h2>Lemon Juice</h2>
+                <p>Price : Rs.150</p>
+                <input type="number" id="quantity18" min="1" value="1">
+                <button onclick="addToOrder(18, 'Lemon Juice', 150)">Add to Bill</button>
+                <button onclick="resetQuantity(18)">Reset</button>
+            </div>
+
+            
+            
+        </div><hr>
+
+        <div class="Ordercontainer">
+            <h2><center><b>Your Order list</b></center></h2>
+            <div class="Order" id="order"></div>
+
+            <p id="totalBill" class="total-bill">Total Bill: Rs.0</p>
+            <button id="checkoutButton" onclick="initiateCheckout()">Checkout</button>
+            <button id="resetOrderButton" onclick="resetWholeOrder()">Reset</button>
+
+        </div><br><hr>
+        
+        <div class="Credit_card_and_person_information" id="fullInfoForm">
+            <!--All the form are created in java script file-->
+        </div>
+        
+    </div>
+    <script src="Script.js"></script>
+    
+    
+    
+    
+</body>
+</html>
